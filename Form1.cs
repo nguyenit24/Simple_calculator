@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,7 +22,7 @@ namespace Buoi07_TinhToan3
         private void Form1_Load(object sender, EventArgs e)
         {
             txtSo1.Text = txtSo2.Text = "0";
-            radCong.Checked = true;             //đầu tiên chọn phép cộng
+            radCong.Checked = true;
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -44,16 +44,24 @@ namespace Buoi07_TinhToan3
 
         private void btnTinh_Click(object sender, EventArgs e)
         {
-            //lấy giá trị của 2 ô số
             double so1, so2, kq = 0;
             so1 = double.Parse(txtSo1.Text);
             so2 = double.Parse(txtSo2.Text);
-            //Thực hiện phép tính dựa vào phép toán được chọn
+
             if (radCong.Checked) kq = so1 + so2;
             else if (radTru.Checked) kq = so1 - so2;
             else if (radNhan.Checked) kq = so1 * so2;
-            else if (radChia.Checked && so2 != 0) kq = so1 / so2;
-            //Hiển thị kết quả lên trên ô kết quả
+            else if (radChia.Checked)
+            {
+                if (so2 == 0)
+                {
+                    MessageBox.Show("Không thể chia cho 0.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                kq = so1 / so2;
+            }
+
             txtKq.Text = kq.ToString();
         }
 
@@ -67,7 +75,20 @@ namespace Buoi07_TinhToan3
                 "Bạn có muốn thoát không?",
                 "Thông báo"
             );
+        }
 
+        private void txtSo_Enter(object sender, EventArgs e)
+        {
+            ((TextBox)sender).SelectAll();
+        }
+
+        private void txtSo_MouseUp(object sender, MouseEventArgs e)
+        {
+            TextBox textBox = (TextBox)sender;
+            if (textBox.SelectionLength == 0)
+            {
+                textBox.SelectAll();
+            }
         }
     }
 }
