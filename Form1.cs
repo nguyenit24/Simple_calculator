@@ -12,6 +12,7 @@ namespace Buoi07_TinhToan3
 {
     public partial class Form1 : Form
     {
+        bool thoatBangNut = false;
         public Form1()
         {
             InitializeComponent();
@@ -26,10 +27,18 @@ namespace Buoi07_TinhToan3
         private void btnThoat_Click(object sender, EventArgs e)
         {
             DialogResult dr;
-            dr = MessageBox.Show("Bạn có thực sự muốn thoát không?",
-                                 "Thông báo", MessageBoxButtons.YesNo);
+
+            dr = MessageBox.Show(
+                "Bạn có thực sự muốn thoát không?",
+                "Thông báo",
+                MessageBoxButtons.YesNo
+            );
+
             if (dr == DialogResult.Yes)
+            {
+                thoatBangNut = true;
                 this.Close();
+            }
         }
 
         private void btnTinh_Click(object sender, EventArgs e)
@@ -66,6 +75,24 @@ namespace Buoi07_TinhToan3
             if (textBox.SelectionLength == 0)
             {
                 textBox.SelectAll();
+            }
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (thoatBangNut) return;
+
+            DialogResult dr;
+
+            dr = MessageBox.Show(
+                "Bạn có muốn thoát không?",
+                "Thông báo",
+                MessageBoxButtons.YesNo
+            );
+
+            if (dr == DialogResult.No)
+            {
+                e.Cancel = true;
             }
         }
     }

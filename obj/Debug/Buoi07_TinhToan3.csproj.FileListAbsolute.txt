@@ -26,3 +26,16 @@ C:\Users\HP\clone web\Simple_calculator\obj\Debug\Buoi07_TinhToan3.csproj.Genera
 C:\Users\HP\clone web\Simple_calculator\obj\Debug\Buoi07_TinhToan3.csproj.CoreCompileInputs.cache
 C:\Users\HP\clone web\Simple_calculator\obj\Debug\Buoi07_TinhToan3.exe
 C:\Users\HP\clone web\Simple_calculator\obj\Debug\Buoi07_TinhToan3.pdb
+C:\Users\HDNIT3\source\repos\Simple_calculator2\bin\Debug\Buoi07_TinhToan3.exe.config
+C:\Users\HDNIT3\source\repos\Simple_calculator2\bin\Debug\Buoi07_TinhToan3.exe
+C:\Users\HDNIT3\source\repos\Simple_calculator2\bin\Debug\Buoi07_TinhToan3.pdb
+C:\Users\HDNIT3\source\repos\Simple_calculator2\obj\Debug\Buoi07_TinhToan3.csproj.AssemblyReference.cache
+C:\Users\HDNIT3\source\repos\Simple_calculator2\obj\Debug\Buoi07_TinhToan3.Form1.resources
+C:\Users\HDNIT3\source\repos\Simple_calculator2\obj\Debug\Buoi07_TinhToan3.Properties.Resources.resources
+C:\Users\HDNIT3\source\repos\Simple_calculator2\obj\Debug\Buoi07_TinhToan3.csproj.GenerateResource.cache
+C:\Users\HDNIT3\source\repos\Simple_calculator2\obj\Debug\Buoi07_TinhToan3.csproj.CoreCompileInputs.cache
+C:\Users\HDNIT3\source\repos\Simple_calculator2\obj\Debug\Buoi07_TinhToan3.exe
+C:\Users\HDNIT3\source\repos\Simple_calculator2\obj\Debug\Buoi07_TinhToan3.pdb
+C:\Users\HDNIT3\source\repos\Simple_calculator2\bin\Debug\System.dll
+C:\Users\HDNIT3\source\repos\Simple_calculator2\bin\Debug\System.xml
+C:\Users\HDNIT3\source\repos\Simple_calculator2\obj\Debug\Buoi07_T.6351A377.Up2Date
